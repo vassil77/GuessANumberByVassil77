@@ -1,4 +1,4 @@
-function guessANumber() {
+function guessANumber() { //test-1
 
     const readline = require('readline').createInterface({
         input: process.stdin,

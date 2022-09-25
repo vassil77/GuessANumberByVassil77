@@ -17,10 +17,13 @@ function guessANumber() {
             if (0 <= guess && guess <= 100) {
                 if (guess == computerGuess) {
                     console.log('You guess it!');
+                    
                     return readline.close();
+
                 } else if (guess < computerGuess) {
                     console.log("Too Low!");
                     recursiveAsyncReadLine();
+                    
                 } else if (guess > computerGuess) {
                     console.log("Too High!");
                     recursiveAsyncReadLine();
@@ -35,6 +38,7 @@ function guessANumber() {
 
     recursiveAsyncReadLine();
 
+    
 }
 
 guessANumber();
